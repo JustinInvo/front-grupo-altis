@@ -1,0 +1,87 @@
+.banner{
+  height: 100vh;
+  box-shadow: 0px 0px 255px 125px rgba(0,0,0,0.4) inset;
+  background-image: url("@/assets/img/bannerDesktop.png");
+  background-size: cover; 
+  background-repeat: no-repeat;
+  color: #fff;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  margin: 0 -1rem;
+  overflow: hidden;
+  .info {
+    svg {
+      width: 205px;
+      fill: white;
+    }
+  }
+  h1 {
+    font-size: 2.8rem;
+    margin: 0 0 .4em;
+  }
+  h2 {
+    font-size: 1rem;
+    margin: 0 0 .8em;
+  }
+  .banner-buttons{
+    display: flex;
+    padding: 1px;
+    border-radius: 8px;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    width: fit-content;
+    margin: 0 auto;
+    .btn{
+      color: #fff;
+      border-radius: 8px;
+      padding: 8px 6px;
+      min-width: 120px;
+      font-size: .75rem;
+      &:first-child {
+        background: white;
+        color: black;
+      }
+      &:last-child {
+        background: black;
+      }
+    }
+  }
+}
+@media (min-width: 1200px) { 
+ .banner {
+  background-size: 50% 100%;
+  background-position: right;
+  background-image: url("@/assets/img/bannerDesktop.png");
+  background-color: #0d6efd;
+  .info{
+    text-align: left;
+    max-width: 50%;
+    padding-left: 5%;
+    margin-top: 10%;
+    svg {
+      margin-bottom:  2rem;
+      max-width: 354px;
+      width: 25vw;
+    }
+    h1 {
+      font-size: 6.103rem;
+    }
+    h2 {
+      font-size: 2.4rem;
+    }
+    .banner-buttons{
+      background: white;
+      margin: 0;
+      .btn {
+        padding: 16px 8px;
+        font-size: 1rem;
+      }
+    }
+  }
+  
+ }
+}
